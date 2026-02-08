@@ -8,6 +8,7 @@ go build -o mcp-server server/main.go
 
 # run client
 go run my_client.go greet --name Akhil
+
 go run my_client.go add --a 10 --b 100
 
 # output
@@ -15,4 +16,4 @@ go run my_client.go add --a 10 --b 100
 2026/02/08 13:38:42 {"sum":110}
 
 # test via UI using mcp-inspector
- mcp-inspector ./mcp-server 
+mcp-inspector ./mcp-server 

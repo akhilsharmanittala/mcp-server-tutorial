@@ -23,7 +23,7 @@ func Greet(
 	input GreetInput,
 ) (*mcp.CallToolResult, GreetOutput, error) {
 	return nil, GreetOutput{
-		Greeting: "Hi " + input.Name,
+		Greeting: "Hi " + input.Name + " WELCOME TO AI WORLD",
 	}, nil
 }
 

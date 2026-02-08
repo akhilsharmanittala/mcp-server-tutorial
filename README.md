@@ -17,3 +17,29 @@ go run my_client.go add --a 10 --b 100
 
 # test via UI using mcp-inspector
 mcp-inspector ./mcp-server 
+
+
+
+
+# connect via claude desktop
+
+> Install claude desktop
+> go to claude icon on top > settings > developer > local mcp server > paste the below content in ~/.config/claude/claude_desktop_config.json
+
+
+{
+  "mcpServers": {
+    "akhil-mcp": {
+      "command": "/Users/akhil/mcp-server-tutorial/mcp-server"
+    }
+  },
+  "preferences": {
+    "coworkScheduledTasksEnabled": false,
+    "sidebarMode": "chat"
+  }
+}
+
+> reload claude desktop
+> in chat "greet Akhil"
+
+check the response and logs in settings> developer> view logs
